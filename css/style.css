@@ -327,9 +327,21 @@ button
 }
 .btn-primary {
   background-color: #e8c300;
+  transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
 }
+.btn-primary:hover {
+  box-shadow: 0 0 40px 40px#a88c00 inset;
+}
+
 .btn-secondary {
   border: 1px solid rgb(256 256 256 / 50%);
+  background-image: linear-gradient(45deg, #a88c00 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.6s ease-in-out;
+}
+.btn-secondary:hover {
+  background-position: 0;
 }
 /*======================COMMON STYLES END=====================*/
 
