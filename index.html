@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7f9b41ae61.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Restoraunt Hungry People</title>
+  </head>
+  <body>
+    <!--======================HEADER START==========================*/-->
+    <header class="header">
+      <div class="container">
+        <nav class="nav-wrap">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ourTeam">TEAM</a></li>
+            <li><a href="#booking">BOOKING</a></li>
+          </ul>
+          <a href="index.html" class="logo">
+            <!-- <img loading="lazy" width="1" height="1" src="img/logo.svg" alt="Logo of Restoraunt Hungry People" /> -->
+            <svg>
+              <use href="img/logo.svg#fill"></use>
+            </svg>
+          </a>
+          <ul class="menu">
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#ourTeam">TEAM</a></li>
+            <li><a href="#booking">BOOKING</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--======================HEADER END============================-->
+
+    <!--======================HERO START============================-->
+    <div class="hero">
+      
+      <div class="container">
+        
+          <div class="timeWork-blok">
+            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+          </div>
+        
+
+        <h1 class="title-deco">
+          Restoraunt <br />
+          <span>Hungry People</span> <br />
+        </h1>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary hero-btn"><p>Book Table</p></a>
+          <a href="#" class="btn btn-secondary"><p>Explore</p></a>
+        </div>
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="icon-style"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/" class="icon-style"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="icon-style"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <a href="#about" class="link-to-bottom"><i class="fas fa-chevron-down"></i></a>
+    </div>
+    <!--======================END HERO================================-->
+
+    <!--=========================Section about us======================-->
+    <section class="aboutUs main-section light" id="about">
+      <div class="container section-content">
+        <div class="section-text">
+          <h2 class="section-title title-deco">About Us</h2>
+          <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.
+          </p>
+          <p class="section-paragraph">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+            posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+            semper laoreet.
+          </p>
+        </div>
+        <div class="section-img-wrap">
+          <img
+            class="section-img"
+            loading="lazy"
+            width="1"
+            height="1"
+            src="img/about-img.webp"
+            alt="kitchen of Restoraunt Hungry People"
+          />
+        </div>
+      </div>
+    </section>
+    <!--=========================END Section about us======================-->
+
+    <!--=========================Section OUR TEAM==========================-->
+    <section class="ourTeam main-section dark reverse" id="ourTeam">
+      <h2 class="section-add-top">Our Team</h2>
+      <div class="container section-content">
+        <div class="section-text">
+          <h3 class="section-title title-deco">Master Chef</h3>
+          <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.
+          </p>
+          <p class="section-paragraph">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+            posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+            semper laoreet.
+          </p>
+        </div>
+        <div class="section-img-wrap">
+          <img
+            class="section-img"
+            loading="lazy"
+            width="1"
+            height="1"
+            src="img/ourTeam-img.webp"
+            alt="cook of Restoraunt Hungry People"
+          />
+        </div>
+      </div>
+    </section>
+    <!--=========================END Section OUR TEAM======================-->
+
+    <!--=========================Section BOOK TABLE==========================-->
+    <section class="aboutUs main-section light" id="booking">
+      <div class="container section-content">
+        <div class="book-table">
+          <h2 class="section-title title-deco">Book Table</h2>
+          <form action="" method="POST" name="form1" class="form">
+            <input class="form-element" type="text" name="name" required placeholder="Name" />
+            <input class="form-element" type="email" name="email" placeholder="Email" />
+            <input class="form-element" type="text" name="tel" required placeholder="Phone" />
+            <select class="form-element" name="count"  >
+              <option disabled selected>People</option>
+              <option value="2">2 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="1">1 Person</option>
+            </select>
+            <input  class="form-element" type="datetime-local" name="date" required placeholder="Date" />
+            <select class="form-element" name="time" >
+              <option disabled selected>Time</option>
+              <option value="18">18:00</option>
+              <option value="19">19:00</option>
+              <option value="20">20:00</option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-wide">Book Now</button>
+          </form>
+        </div>
+        <div class="section-img-wrap">
+          <img
+            class="section-img"
+            loading="lazy"
+            width="1"
+            height="1"
+            src="img/bookTable-img.webp"
+            alt="book of Restoraunt Hungry People"
+          />
+        </div>
+      </div>
+    </section>
+    <!--=========================END Section BOOK TABLE======================-->
+
+    <!--=========================Section Specialties =========================-->
+    <section class="specialties main-section dark reverse">
+      <h2 class="section-add-top">Specialties</h2>
+      <div class="container">
+        <div class="swiper-container specialties-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide section-content">
+              <div class="section-text">
+                <h3 class="section-title title-deco">chocolate pancakes</h3>
+                <p class="section-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                  velit maximus, molestie est a, tempor magna.
+                </p>
+                <p class="section-paragraph">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                  semper laoreet.
+                </p>
+              </div>
+              <div class="section-img-wrap">
+                <img
+                  class="section-img"
+                  loading="lazy"
+                  width="1"
+                  height="1"
+                  src="img/Specialties-img.webp"
+                  alt="icecreame of Restoraunt Hungry People"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide section-content">
+              <div class="section-text">
+                <h3 class="section-title title-deco">chocolate pancakes</h3>
+                <p class="section-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                  velit maximus, molestie est a, tempor magna.
+                </p>
+                <p class="section-paragraph">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                  semper laoreet.
+                </p>
+              </div>
+              <div class="section-img-wrap">
+                <img
+                  class="section-img"
+                  loading="lazy"
+                  width="1"
+                  height="1"
+                  src="img/Specialties-img.webp"
+                  alt="icecreame of Restoraunt Hungry People"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide section-content">
+              <div class="section-text">
+                <h3 class="section-title title-deco">chocolate pancakes</h3>
+                <p class="section-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                  velit maximus, molestie est a, tempor magna.
+                </p>
+                <p class="section-paragraph">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                  semper laoreet.
+                </p>
+              </div>
+              <div class="section-img-wrap">
+                <img
+                  class="section-img"
+                  loading="lazy"
+                  width="1"
+                  height="1"
+                  src="img/Specialties-img.webp"
+                  alt="icecreame of Restoraunt Hungry People"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide section-content">
+              <div class="section-text">
+                <h3 class="section-title title-deco">chocolate pancakes</h3>
+                <p class="section-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                  velit maximus, molestie est a, tempor magna.
+                </p>
+                <p class="section-paragraph">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                  semper laoreet.
+                </p>
+              </div>
+              <div class="section-img-wrap">
+                <img
+                  class="section-img"
+                  loading="lazy"
+                  width="1"
+                  height="1"
+                  src="img/Specialties-img.webp"
+                  alt="icecreame of Restoraunt Hungry People"
+                />
+              </div>
+            </div>
+          </div>
+         
+          
+        </div>
+      </div>
+      <div class="specialties-slider-pagination"></div>
+    </section>
+
+    <!--=========================END Section Specialties =========================-->
+
+    <!--=========================Section DELICIOUS MENU =========================-->
+    <div class="deliciousMenu main-section light col">
+      <div class="container section-content">
+        <div class="section-title title-deco">Delicious Menu</div>
+        <p class="section-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<br />
+          at velit maximus, molestie est a, tempor magna.
+        </p>
+        <ul class="deliciousMenu-group">
+         <li class="group-items"><a href="javascript:void(0)">Soupe</a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Pizza </a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Pasta </a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Desert </a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Wine </a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Beer </a></li>
+          <li class="group-items"><a href="javascript:void(0)"> Drinks </a></li>
+        </ul>
+
+        <!--DD DT DL-->
+        <dl class="deliciousMenu-list">
+          
+           
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            <div>
+              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+              <dd>Integer ullamcorper neque eu purus euismod</dd>
+            </div>
+            
+            
+          
+        </dl>
+      </div>
+    </div>
+    <!--=========================Section DELICIOUS MENU =========================-->
+
+    <!--=========================Section PRIVATE EVENTS =========================-->
+    <div class="privateEvent main-section dark ">
+      <h2 class="section-add-top">Private Events</h2>
+      <div class="container section-content">
+        <div class="section-img-wrap reverse">
+          <h3 class="img-caption">Weddings</h3>
+          <img
+            
+            class="section-img"
+            loading="lazy"
+            width="1"
+            height="1"
+            src="img/prevateEventsWeddings-img.webp"
+            alt="Private Events of Restoraunt Hungry People"
+          />
+        </div>
+        <div class="section-img-wrap">
+          <h3 class="img-caption">Corporate pzrties</h3>
+          <img
+            class="section-img"
+            loading="lazy"
+            width="1"
+            height="1"
+            src="img/prevateEventsCorporate-img.webp"
+            alt="icecreame of Restoraunt Hungry People"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--=========================END Section PRIVATE EVENTS =========================-->
+
+    <!--=========================Slide Blok =========================-->
+    <div class="slide-blok">
+      <div class="container">
+        <div class="slider-wrap">
+          <div class="swiper-container test-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slide-img1.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-img2.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-img3.webp" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-img4.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--========================END Slide Blok =========================-->
+
+    <!--=========================Section CONTACT =========================-->
+    <div class="contact main-section light col ">
+      <div class="container section-content">
+        <div class="section-title title-deco">Contact</div>
+        <p class="section-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br />
+          at velit maximus, molestie est a, tempor magna.
+        </p>
+        <form action="" method="POST" name="form1" class="form">
+          <input class="form-element" type="text" name="name" required placeholder="Name" />
+          <input class="form-element" type="email" name="email" placeholder="Email" />
+          <input class="form-element" type="text" name="tel" required placeholder="Phone" />
+          <textarea class="form-element message" type="text" cols="30" rows="5" placeholder="Message"></textarea>
+          <div class="info-block"> <i class="fas fa-map-marker-alt"></i>5th London Boulevard, U.K.
+                                   <i class="fas fa-phone"></i>+40 729 131 637/+40 726 458 782
+                                   <i class="fas fa-envelope"></i>office@mindblister.com</div>
+          <button type="submit" class="btn btn-primary btn-wide">Book Now</button>
+        </form>
+      </div>
+    </div>
+    <!--=========================Section CONTACT =========================-->
+    <!--=========================MAP =========================-->
+    <div class="map">
+      <iframe
+        loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.2966683907794!2d-74.01120700139376!3d40.720210183442056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f5852e694d%3A0x5bed69f7f928f84b!2sLocanda%20Verde!5e0!3m2!1sru!2sua!4v1608665285627!5m2!1sru!2sua"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <!--=========================END MAP =========================-->
+
+    <!--=========================footer======================-->
+    <footer class="footer">
+      <div class="container">
+        <p>© Copyright Mindblister 2019</p>
+      </div>
+    </footer>
+    <!--=========================END footer======================-->
+
+    <div class="container">
+      <style>
+        /* .ppp{
+          position: relative;
+        }
+        .ppp::before{
+          content: 'Search';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+        }
+        .ppp:focus-within::before{
+          display: none;
+        } */
+        form ::placeholder,
+        select {
+          background-color: #e5e5e5;
+          border-radius: 5px;
+          border-style: none;
+        }
+      </style>
+    </div>
+
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
