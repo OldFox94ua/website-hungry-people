@@ -667,6 +667,7 @@ textarea{
 }
 .info-block i{
   color: #e8c300;
+  padding-right: 10px;
 }
 .contact button{
   width: 49%;
