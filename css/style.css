@@ -174,8 +174,7 @@ button {
 input,
 select,
 textarea,
-button
- {
+button {
   font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -304,15 +303,15 @@ button
   transform: translateX(-50%) translateY(-50%);
 }
 
-.black-label{
+.black-label {
   position: absolute;
-  
+
   transform: rotate(90deg);
   transform-origin: right top;
   height: 100%;
   text-transform: uppercase;
 }
-.btn{
+.btn {
   color: #fff;
   padding: 22px;
   min-width: 200px;
@@ -322,7 +321,7 @@ button
   align-items: center;
   border-radius: 5px;
 }
-.btn-wide{
+.btn-wide {
   width: 100%;
 }
 .btn-primary {
@@ -409,7 +408,7 @@ button
     url("../img/header-bg.webp") no-repeat center / cover, #000;
   position: relative;
 }
-.hero>.container{
+.hero > .container {
   position: relative;
 }
 
@@ -444,7 +443,7 @@ h1 > span {
   justify-content: center;
   margin-top: 30px;
 }
-.hero-btn{
+.hero-btn {
   margin-right: 40px;
 }
 .link-to-bottom {
@@ -472,7 +471,7 @@ h1 > span {
   }
 }
 
-.social-links{
+.social-links {
   width: 60px;
   height: 220px;
   display: flex;
@@ -500,12 +499,12 @@ h1 > span {
   transition: all 0.3s linear;
   border: 2px solid #e8c300;
 }
-.row-book-table{
+.row-book-table {
   display: flex;
   justify-content: space-between;
 }
 
-.row-book-table button{
+.row-book-table button {
   width: 100%;
   color: #fff;
   background-color: #e8c300;
@@ -528,7 +527,7 @@ h1 > span {
   background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
     url("../img/specialty's-bg.webp") no-repeat center / cover;
 }
-.specialties .specialties-slider-pagination{
+.specialties .specialties-slider-pagination {
   position: absolute;
   left: 0;
   bottom: 50px;
@@ -537,8 +536,8 @@ h1 > span {
   justify-content: center;
   align-items: center;
 }
-.specialties .specialties-slider-pagination .slider-bullet{
-  width: 10px;  
+.specialties .specialties-slider-pagination .slider-bullet {
+  width: 10px;
   height: 10px;
   border-radius: 50%;
   margin: 0 10px;
@@ -546,7 +545,7 @@ h1 > span {
   opacity: 0.5;
   transition: 0.3s;
 }
-.specialties .specialties-slider-pagination .slider-bullet-active{
+.specialties .specialties-slider-pagination .slider-bullet-active {
   opacity: 1;
 }
 /*=========End Section Specialties==============================*/
@@ -565,17 +564,17 @@ h1 > span {
   text-transform: uppercase;
   color: #333;
 }
-.deliciousMenu-group a{
+.deliciousMenu-group a {
   padding: 20px 32px;
 }
-.deliciousMenu-group :nth-child(1){
+.deliciousMenu-group :nth-child(1) {
   border: none;
 }
 .deliciousMenu-list {
   columns: 3;
   column-gap: 70px;
 }
-.deliciousMenu-list>div{
+.deliciousMenu-list > div {
   page-break-inside: avoid;
 }
 .deliciousMenu-list dt {
@@ -604,7 +603,7 @@ h1 > span {
   border-radius: 5px;
 }
 
-.img-caption{
+.img-caption {
   position: absolute;
   font-family: "Banny";
   font-size: 24px;
@@ -614,14 +613,13 @@ h1 > span {
   padding: 25px 20px;
   background: #000;
   width: 200%;
-  
 }
-.privateEvent .section-img-wrap:not(.reverse) .img-caption{
+.privateEvent .section-img-wrap:not(.reverse) .img-caption {
   bottom: 0;
   transform-origin: 0 100%;
   transform: rotate(-90deg) translateY(100%);
 }
-.privateEvent .section-img-wrap.reverse .img-caption{
+.privateEvent .section-img-wrap.reverse .img-caption {
   left: 100%;
   transform-origin: 0 0;
   transform: rotate(90deg);
@@ -640,23 +638,22 @@ h1 > span {
 }
 /*--=========================END Slide Blok =========================*/
 
-
 /*======================================CONTACT================*/
-.contact .form{
+.contact .form {
   width: 100%;
 }
-.contact .form-element{
+.contact .form-element {
   width: 33%;
 }
-.form-element.message{
+.form-element.message {
   width: 100%;
   height: 120px;
 }
-textarea{
+textarea {
   resize: none;
   overflow: hidden;
 }
-.info-block{
+.info-block {
   width: 49%;
   font-size: 12px;
   color: rgba(51, 51, 51, 50%);
@@ -665,11 +662,11 @@ textarea{
   justify-content: space-between;
   font-weight: 900;
 }
-.info-block i{
+.info-block i {
   color: #e8c300;
   padding-right: 10px;
 }
-.contact button{
+.contact button {
   width: 49%;
 }
 
@@ -694,7 +691,7 @@ textarea{
   justify-content: space-between;
 }
 
-.form-element{
+.form-element {
   margin-bottom: 10px;
   padding: 20px;
   width: 49%;
@@ -702,7 +699,7 @@ textarea{
   color: #333;
   border-radius: 5px;
 }
-.form-element::placeholder{
+.form-element::placeholder {
   background: none;
   color: #333;
 }
@@ -718,89 +715,153 @@ textarea{
 /* // XX-Large devices (larger desktops) */
 /* // No media query since the xxl breakpoint has no upper bound on its width */
 /* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) { 
-  .container{
+@media (max-width: 1399.98px) {
+  .container {
     max-width: 1240px;
   }
-  .menu a{
-    width: 100px;
-  }
-  .section-img {
-    width: 400px;
-    height: 400px;
-  }
-  .section-img-wrap::after {
-    width: 200px;
-    height: 200px
-  }
-  .form{
-    width: 496px;
-  }
- }
+}
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-  .container{
+@media (max-width: 1199.98px) {
+  .container {
     max-width: 1140px;
   }
-  .section-img {
-    width: 300px;
-    height: 300px;
+  .menu a {
+    width: 100px; 
   }
-  .section-img-wrap{
-    margin-left: 20px;
+  .section-img {
+    width: 325px;
+    height: 325px;
+  }
+  .section-img-wrap {
+    --padding: 85px;
+    padding-right: var(--padding);
+    margin-left: 55px;
   }
   .main-section.reverse .section-img-wrap,
-.section-img-wrap.reverse {
-  margin-right: 20px;
-}
-  .section-img-wrap::after {
-    width: 157px;
-    height: 157px
+  .section-img-wrap.reverse {
+    margin-right: 55px;
+    padding-left: var(--padding);
   }
- }
+  .section-img-wrap::after {
+    width: 170px;
+    height: 170px;
+    border: 14px solid var(--main-color)
+  }
+  .deliciousMenu-list {
+    columns: 2;
+  }
+}
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
   .container {
     max-width: 960px;
   }
-  .form{
-    width: 372px;
+  .header{
+    display: none;
   }
- }
+  .section-title {
+    font-family: "Banny";
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .section-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.55;
+  }
+  .book-table + .section-img-wrap {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .deliciousMenu-list {
+    column-gap: 20px;
+  }
+}
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   .container {
-    max-width: 720px;	
+    max-width: 720px;
+  }
+  
+  .main-section .section-content {
+    align-items: center;
+
+    flex-direction: column;
+  }
+  .main-section.reverse .section-content {
+    flex-direction: column;
   }
 
-  .form{
-    width: 100%;
+  .form {
+    display: block;
     flex-wrap: nowrap;
-    flex-direction: column;
-    
+    justify-content: space-between;
   }
-  .form-element{
+  .form-element {
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 5px;
+  }
+  .contact .form-element {
     width: 100%;
   }
- }
+  .info-block {
+    width: 100%;
+  }
+  .contact button {
+    width: 100%;
+  }
+  .deliciousMenu-list {
+    columns: 1;
+  }
+}
 /* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
   .container {
     max-width: 540px;
   }
- }
+  .section-img {
+    width: 225px;
+    height: 225px;
+  }
+  
+  .section-img-wrap {
+    --padding: 60px;
+    padding-right: var(--padding);
+    margin-left: 40px;
+  }
+  .main-section.reverse .section-img-wrap,
+  .section-img-wrap.reverse {
+    margin-right: 40px;
+    padding-left: var(--padding);
+  }
+  .section-img-wrap::after {
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--main-color)
+  }
+
+
+
+}
 /* // X-Small devices (iPhone 5/5s/SE, equals to 320px) */
-@media (max-width: 320px) { 
-  .container{
+@media (max-width: 320px) {
+  .container {
     width: 100%;
   }
- }
-
-
-
-
-
-
-
-
-
+  .deliciousMenu-list dt {
+    font-size: 14px;
+  }
+  .deliciousMenu-list dd {
+    font-size: 10px;
+  }
+}
