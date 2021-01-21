@@ -166,7 +166,6 @@ body {
   background: #fff;
   font-size: 14px;
   color: #000;
-  padding-bottom: 2000px; /*dev*/
 }
 button {
   cursor: pointer;
@@ -725,9 +724,11 @@ textarea {
   .container {
     max-width: 1140px;
   }
+  /*adaptive menu more small wigth -33px one element menu*/
   .menu a {
-    width: 100px; 
+    width: 100px;
   }
+  /*adaptive all pictures in block k=0.68from the initial  more small*/
   .section-img {
     width: 325px;
     height: 325px;
@@ -745,8 +746,9 @@ textarea {
   .section-img-wrap::after {
     width: 170px;
     height: 170px;
-    border: 14px solid var(--main-color)
+    border: 14px solid var(--main-color);
   }
+  /*adaptive block delicion Menu*/
   .deliciousMenu-list {
     columns: 2;
   }
@@ -756,29 +758,26 @@ textarea {
   .container {
     max-width: 960px;
   }
-  .header{
-    display: none;
+  .header {
+    display: none;/* don't understund how adapitiv this block*/
   }
   .section-title {
-    font-family: "Banny";
     font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
   }
   .section-subtitle {
     font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.55;
   }
+  /*removed a picture from the block to expand the input
+   field to the full width of the block*/
   .book-table + .section-img-wrap {
     display: none;
   }
   .form {
     width: 100%;
   }
+  /*reduced the indentation between the columns 
+  so as not to go earlier by 1 column in the menu*/
   .deliciousMenu-list {
     column-gap: 20px;
   }
@@ -788,12 +787,18 @@ textarea {
   .container {
     max-width: 720px;
   }
-  
   .main-section .section-content {
     align-items: center;
-
     flex-direction: column;
   }
+  /*adaptive buttons in hero*/
+  .hero-btns {
+    flex-direction: column;
+  }
+  .hero-btn {
+    margin-right: 0;
+  }
+
   .main-section.reverse .section-content {
     flex-direction: column;
   }
@@ -807,9 +812,16 @@ textarea {
     margin-bottom: 10px;
     padding: 20px;
     width: 100%;
-    background-color: #ccc;
-    color: #333;
-    border-radius: 5px;
+  }
+
+  .deliciousMenu-group a {
+    padding: 14px 21px;
+  }
+  .deliciousMenu-group {
+    margin-bottom: 20px;
+  }
+  .deliciousMenu-list dd {
+    margin-bottom: 17px;
   }
   .contact .form-element {
     width: 100%;
@@ -829,11 +841,12 @@ textarea {
   .container {
     max-width: 540px;
   }
+  /*adaptive all pictures in block k=0.47 from the initial  more small*/
   .section-img {
     width: 225px;
     height: 225px;
   }
-  
+
   .section-img-wrap {
     --padding: 60px;
     padding-right: var(--padding);
@@ -847,16 +860,39 @@ textarea {
   .section-img-wrap::after {
     width: 120px;
     height: 120px;
-    border: 10px solid var(--main-color)
+    border: 10px solid var(--main-color);
   }
-
-
-
+  .deliciousMenu-group a {
+    padding: 10px 16px;
+  }
 }
 /* // X-Small devices (iPhone 5/5s/SE, equals to 320px) */
 @media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
   .container {
     width: 100%;
+  }
+  /*adaptive all pictures in block k=0.0,36 from the initial  more small*/
+  .section-img {
+    width: 175px;
+    height: 175px;
+  }
+  .section-img-wrap {
+    --padding: 46px;
+    padding-right: var(--padding);
+    margin-left: 29px;
+  }
+  .main-section.reverse .section-img-wrap,
+  .section-img-wrap.reverse {
+    margin-right: 29px;
+    padding-left: var(--padding);
+  }
+  .section-img-wrap::after {
+    border: 7px solid var(--main-color);
+    width: 90px;
+    height: 90px;
   }
   .deliciousMenu-list dt {
     font-size: 14px;
