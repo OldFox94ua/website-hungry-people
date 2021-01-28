@@ -22,3 +22,4 @@ const specialitesSlider = new Swiper('.specialties-slider', {
         bulletActiveClass: 'slider-bullet-active'
       },
 })
+

@@ -471,8 +471,6 @@ h1 > span {
 }
 
 .social-links {
-  width: 60px;
-  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -717,6 +715,7 @@ textarea {
 @media (max-width: 1399.98px) {
   .container {
     max-width: 1240px;
+    padding: 0 20px;
   }
 }
 /* // Large devices (desktops, less than 1200px) */
@@ -753,13 +752,37 @@ textarea {
     columns: 2;
   }
 }
+@media (max-width: 1050px) {
+  .container {
+    max-width: 991px;
+  }
+  .section-img {
+    width: 290px;
+    height: 290px;
+  }
+  .section-img-wrap {
+    --padding: 75px;
+    padding-right: var(--padding);
+    margin-left: 45px;
+  }
+  .main-section.reverse .section-img-wrap,
+  .section-img-wrap.reverse {
+    margin-right: 45px;
+    padding-left: var(--padding);
+  }
+  .section-img-wrap::after {
+    width: 145px;
+    height: 145px;
+    border: 14px solid var(--main-color);
+  }
+}
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .container {
     max-width: 960px;
   }
   .header {
-    display: none;/* don't understund how adapitiv this block*/
+    display: none; /* don't understund how adapitiv this block*/
   }
   .section-title {
     font-size: 30px;
@@ -767,6 +790,9 @@ textarea {
   }
   .section-subtitle {
     font-size: 14px;
+  }
+  h1 > span {
+    font-size: 75px;
   }
   /*removed a picture from the block to expand the input
    field to the full width of the block*/
@@ -776,6 +802,7 @@ textarea {
   .form {
     width: 100%;
   }
+
   /*reduced the indentation between the columns 
   so as not to go earlier by 1 column in the menu*/
   .deliciousMenu-list {
@@ -786,36 +813,95 @@ textarea {
 @media (max-width: 767.98px) {
   .container {
     max-width: 720px;
+    padding: 0 15px;
   }
   .main-section .section-content {
     align-items: center;
     flex-direction: column;
   }
+  .main-section {
+    padding: 50px 0;
+  }
+  .section-text{
+    margin-bottom: 15px;
+  }
   /*adaptive buttons in hero*/
+  h1 > span {
+    font-size: 55px;
+  }
+  .hero {
+    padding: 150px 0;
+  }
+  .hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeWork-blok {
+    font-size: 11px;
+    transform: rotate(0);
+    position: relative;
+    order: 1;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateY(0);
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .icon-style {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .btn {
+    padding: 14px;
+  }
   .hero-btns {
     flex-direction: column;
+    width: 60%;
+    margin: 30px auto;
+    align-items: center;
   }
   .hero-btn {
     margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .link-to-bottom {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
   }
 
   .main-section.reverse .section-content {
     flex-direction: column;
   }
+  .section-add-top {
+    top: 20px;
+    font-size: 9px;
+  }
 
   .form {
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
   }
   .form-element {
     margin-bottom: 10px;
-    padding: 20px;
     width: 100%;
   }
-
   .deliciousMenu-group a {
     padding: 14px 21px;
+  }
+  .deliciousMenu-list dt {
+    font-size: 12px;
   }
   .deliciousMenu-group {
     margin-bottom: 20px;
@@ -823,11 +909,21 @@ textarea {
   .deliciousMenu-list dd {
     margin-bottom: 17px;
   }
+  .img-caption {
+    font-size: 16px;
+  }
+
   .contact .form-element {
     width: 100%;
   }
   .info-block {
     width: 100%;
+    flex-direction: column;
+    order: 1;
+    margin-top: 10px;
+  }
+  .info-block a {
+    margin-bottom: 10px;
   }
   .contact button {
     width: 100%;
@@ -846,7 +942,9 @@ textarea {
     width: 225px;
     height: 225px;
   }
-
+  h1 > span {
+    font-size: 40px;
+  }
   .section-img-wrap {
     --padding: 60px;
     padding-right: var(--padding);
@@ -861,6 +959,10 @@ textarea {
     width: 120px;
     height: 120px;
     border: 10px solid var(--main-color);
+  }
+  .deliciousMenu-group {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .deliciousMenu-group a {
     padding: 10px 16px;
