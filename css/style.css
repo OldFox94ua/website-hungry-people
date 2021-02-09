@@ -341,6 +341,15 @@ button {
 .btn-secondary:hover {
   background-position: 0;
 }
+.burger-btn{
+  width: auto;
+  padding: 20px;
+  min-width: initial;
+  display: none;
+}
+.burger-menu{
+  position: relative;
+}
 /*======================COMMON STYLES END=====================*/
 
 /*======================HEADER START==========================*/
@@ -352,7 +361,7 @@ button {
   z-index: 1000;
 }
 
-.nav-wrap {
+.nav-wrap .burger-menu{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -382,16 +391,20 @@ button {
 }
 .logo > img {
   width: 150px;
-  height: 150px;
+  height: auto;
   animation: rotate 20s linear infinite;
   fill: var(--main-color);
+}
+.logo.mobile{
+  display: none;
 }
 .logo > svg {
   width: 150px;
-  height: 150px;
+  height: auto;
   animation: rotate 20s linear infinite;
   fill: var(--main-color);
 }
+
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
@@ -725,7 +738,8 @@ textarea {
   }
   /*adaptive menu more small wigth -33px one element menu*/
   .menu a {
-    width: 100px;
+    width: auto;
+    padding: 21px 15px;
   }
   /*adaptive all pictures in block k=0.68from the initial  more small*/
   .section-img {
@@ -775,15 +789,31 @@ textarea {
     height: 145px;
     border: 14px solid var(--main-color);
   }
+  .menu a {
+    width: 85px; 
+    padding: 21px 15px;
+  }
 }
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .container {
     max-width: 960px;
   }
-  .header {
-    display: none; /* don't understund how adapitiv this block*/
+  .logo > img {
+    width: 50px;
+    height: 50px;
   }
+ .burger-menu{
+   justify-content: space-evenly;
+ }
+ .menu a{
+   padding: 20px 12px;
+   width: auto;
+ }
+ .logo>img{
+   width: 65px;
+   height: 65px;
+ }
   .section-title {
     font-size: 30px;
     margin-bottom: 15px;
@@ -824,6 +854,34 @@ textarea {
   }
   .section-text{
     margin-bottom: 15px;
+  }
+  .burger-btn,.logo.mobile{
+    display: inline-flex;
+  }
+  
+  .burger-menu{
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .burger-menu .logo{
+    order: -1;
+  }
+  .burger-menu .menu{
+    flex-direction: column;
+    border: 0;
+    align-items: center;
+    
+  }
+  .burger-menu a{
+    font-size: 18px;
   }
   /*adaptive buttons in hero*/
   h1 > span {

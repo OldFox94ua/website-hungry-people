@@ -23,24 +23,37 @@
     <header class="header">
       <div class="container">
         <nav class="nav-wrap">
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#ourTeam">Теam</a></li>
-            <li><a href="#booking">Booking</a></li>
-          </ul>
-          <a href="index.html" class="logo">
-            <!-- <img loading="lazy" width="1" height="1" src="img/logo.svg" alt="Logo of Restoraunt Hungry People" /> -->
-            <svg>
-              <use href="img/logo.svg#fill"></use>
-            </svg>
+          <a href="index.html" class="logo mobile">
+            <img
+              loading="lazy"
+              src="img/logo.png"
+              alt="Logo of Restoraunt Hungry People"
+            />
           </a>
-          <ul class="menu">
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#galerie">Galerie</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#booking">Contact</a></li>
-          </ul>
+          <div class="burger-menu">
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#ourTeam">Теam</a></li>
+              <li><a href="#booking">Booking</a></li>
+            </ul>
+            <a href="index.html" class="logo">
+              <img
+                loading="lazy"
+                src="img/logo.png"
+                alt="Logo of Restoraunt Hungry People"
+              />
+            </a>
+            <ul class="menu">
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#galerie">Galerie</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#booking">Contact</a></li>
+            </ul>
+          </div>
+          <button href="#" class="btn btn-primary hero-btn burger-btn close">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
         </nav>
       </div>
     </header>
@@ -48,23 +61,20 @@
 
     <!--======================HERO START============================-->
     <div class="hero">
-      
       <div class="container">
-        
-          <div class="timeWork-blok">
-            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
-          </div>
-        
+        <div class="timeWork-blok">
+          Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+        </div>
 
         <h1 class="title-deco">
           Restoraunt <br />
           <span>Hungry People</span> <br />
         </h1>
         <div class="hero-btns">
-          <a href="#" class="btn btn-primary hero-btn"><p>Book Table</p></a>
-          <a href="#" class="btn btn-secondary"><p>Explore</p></a>
+          <a href="#" class="btn btn-primary hero-btn">Book Table</a>
+          <a href="#" class="btn btn-secondary">Explore</a>
         </div>
-        
+
         <div class="social-links">
           <a href="https://www.facebook.com/" class="icon-style"
             ><i class="fab fa-facebook-f"></i
@@ -77,7 +87,9 @@
           ></a>
         </div>
       </div>
-      <a href="#about" class="link-to-bottom"><i class="fas fa-chevron-down"></i></a>
+      <a href="#about" class="link-to-bottom"
+        ><i class="fas fa-chevron-down"></i
+      ></a>
     </div>
     <!--======================END HERO================================-->
 
@@ -150,23 +162,48 @@
         <div class="book-table">
           <h2 class="section-title title-deco">Book Table</h2>
           <form action="" method="POST" name="form1" class="form">
-            <input class="form-element" type="text" name="name" required placeholder="Name" />
-            <input class="form-element" type="email" name="email" placeholder="Email" />
-            <input class="form-element" type="text" name="tel" required placeholder="Phone" />
-            <select class="form-element" name="count"  >
+            <input
+              class="form-element"
+              type="text"
+              name="name"
+              required
+              placeholder="Name"
+            />
+            <input
+              class="form-element"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="form-element"
+              type="text"
+              name="tel"
+              required
+              placeholder="Phone"
+            />
+            <select class="form-element" name="count">
               <option disabled selected>People</option>
               <option value="2">2 Persons</option>
               <option value="4">4 Persons</option>
               <option value="1">1 Person</option>
             </select>
-            <input  class="form-element" type="datetime-local" name="date" required placeholder="Date" />
-            <select class="form-element" name="time" >
+            <input
+              class="form-element"
+              type="datetime-local"
+              name="date"
+              required
+              placeholder="Date"
+            />
+            <select class="form-element" name="time">
               <option disabled selected>Time</option>
               <option value="18">18:00</option>
               <option value="19">19:00</option>
               <option value="20">20:00</option>
             </select>
-            <button type="submit" class="btn btn-primary btn-wide">Book Now</button>
+            <button type="submit" class="btn btn-primary btn-wide">
+              Book Now
+            </button>
           </form>
         </div>
         <div class="section-img-wrap">
@@ -193,15 +230,15 @@
               <div class="section-text">
                 <h3 class="section-title title-deco">chocolate pancakes</h3>
                 <p class="section-subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                  velit maximus, molestie est a, tempor magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  at velit maximus, molestie est a, tempor magna.
                 </p>
                 <p class="section-paragraph">
                   Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-                  semper laoreet.
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
                 </p>
               </div>
               <div class="section-img-wrap">
@@ -219,15 +256,15 @@
               <div class="section-text">
                 <h3 class="section-title title-deco">chocolate pancakes</h3>
                 <p class="section-subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                  velit maximus, molestie est a, tempor magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  at velit maximus, molestie est a, tempor magna.
                 </p>
                 <p class="section-paragraph">
                   Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-                  semper laoreet.
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
                 </p>
               </div>
               <div class="section-img-wrap">
@@ -245,15 +282,15 @@
               <div class="section-text">
                 <h3 class="section-title title-deco">chocolate pancakes</h3>
                 <p class="section-subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                  velit maximus, molestie est a, tempor magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  at velit maximus, molestie est a, tempor magna.
                 </p>
                 <p class="section-paragraph">
                   Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-                  semper laoreet.
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
                 </p>
               </div>
               <div class="section-img-wrap">
@@ -271,15 +308,15 @@
               <div class="section-text">
                 <h3 class="section-title title-deco">chocolate pancakes</h3>
                 <p class="section-subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                  velit maximus, molestie est a, tempor magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  at velit maximus, molestie est a, tempor magna.
                 </p>
                 <p class="section-paragraph">
                   Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-                  feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
-                  semper laoreet.
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
                 </p>
               </div>
               <div class="section-img-wrap">
@@ -294,8 +331,6 @@
               </div>
             </div>
           </div>
-         
-          
         </div>
       </div>
       <div class="specialties-slider-pagination"></div>
@@ -312,7 +347,7 @@
           at velit maximus, molestie est a, tempor magna.
         </p>
         <ul class="deliciousMenu-group">
-         <li class="group-items"><a href="javascript:void(0)">Soupe</a></li>
+          <li class="group-items"><a href="javascript:void(0)">Soupe</a></li>
           <li class="group-items"><a href="javascript:void(0)"> Pizza </a></li>
           <li class="group-items"><a href="javascript:void(0)"> Pasta </a></li>
           <li class="group-items"><a href="javascript:void(0)"> Desert </a></li>
@@ -323,99 +358,94 @@
 
         <!--DD DT DL-->
         <dl class="deliciousMenu-list">
-          
-           
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            <div>
-              <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
-              <dd>Integer ullamcorper neque eu purus euismod</dd>
-            </div>
-            
-            
-          
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
+          <div>
+            <dt>PIZZA QUATRO STAGIONI . . . . 55,68 USD</dt>
+            <dd>Integer ullamcorper neque eu purus euismod</dd>
+          </div>
         </dl>
       </div>
     </div>
@@ -478,7 +508,7 @@
     <!--========================END Slide Blok =========================-->
 
     <!--=========================Section CONTACT =========================-->
-    <div class="contact main-section light col ">
+    <div class="contact main-section light col">
       <div class="container section-content">
         <div class="section-title title-deco">Contact</div>
         <p class="section-subtitle">
@@ -486,15 +516,47 @@
           at velit maximus, molestie est a, tempor magna.
         </p>
         <form action="" method="POST" name="form1" class="form">
-          <input class="form-element" type="text" name="name" required placeholder="Name" />
-          <input class="form-element" type="email" name="email" placeholder="Email" />
-          <input class="form-element" type="text" name="tel" required placeholder="Phone" />
-          <textarea class="form-element message" type="text" cols="30" rows="5" placeholder="Message"></textarea>
-          <div class="info-block"><a href="#map"> <i class="fas fa-map-marker-alt"></i>5th London Boulevard, U.K.</a>
-                                  <a href="tel:+40 729 131 637"> <i class="fas fa-phone"></i>+40 729 131 637/+40 726 458 782</a>
-                                  <a href="mailto:office@mindblister.com"> <i class="fas fa-envelope"></i>office@mindblister.com</a>
-                                  </div>
-          <button type="submit" class="btn btn-primary btn-wide">Book Now</button>
+          <input
+            class="form-element"
+            type="text"
+            name="name"
+            required
+            placeholder="Name"
+          />
+          <input
+            class="form-element"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="form-element"
+            type="text"
+            name="tel"
+            required
+            placeholder="Phone"
+          />
+          <textarea
+            class="form-element message"
+            type="text"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+          <div class="info-block">
+            <a href="#map">
+              <i class="fas fa-map-marker-alt"></i>5th London Boulevard, U.K.</a
+            >
+            <a href="tel:+40 729 131 637">
+              <i class="fas fa-phone"></i>+40 729 131 637/+40 726 458 782</a
+            >
+            <a href="mailto:office@mindblister.com">
+              <i class="fas fa-envelope"></i>office@mindblister.com</a
+            >
+          </div>
+          <button type="submit" class="btn btn-primary btn-wide">
+            Book Now
+          </button>
         </form>
       </div>
     </div>
