@@ -406,7 +406,7 @@ button {
 .logo.mobile{
   display: none;
 }
-.logo > svg {
+.logo > img {
   width: 150px;
   height: auto;
   animation: rotate 20s linear infinite;
@@ -1023,6 +1023,9 @@ textarea {
   .deliciousMenu-list {
     columns: 1;
   }
+  .privateEvent .section-img-wrap {
+    margin-bottom: 20px;
+  }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -1068,6 +1071,26 @@ textarea {
   .container {
     width: 100%;
   }
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .section-subtitle {
+    font-size: 12px;
+  }
+  .hero {
+    padding: 130px 0;
+  }
+  .logo > img {
+    width: 60px;
+    height: auto;
+  }
+  .hero-btn.burger-btn{
+    margin: 0;
+  }
+  .title-deco {
+    padding-bottom: 18px;
+  }
   /*adaptive all pictures in block k=0.0,36 from the initial  more small*/
   .section-img {
     width: 175px;
@@ -1093,5 +1116,8 @@ textarea {
   }
   .deliciousMenu-list dd {
     font-size: 10px;
+  }
+  .privateEvent .section-img-wrap {
+    margin-bottom: 15px;
   }
 }
