@@ -347,8 +347,16 @@ button {
   min-width: initial;
   display: none;
 }
+.burger-btn.close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
 .burger-menu{
-  position: relative;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 /*======================COMMON STYLES END=====================*/
 
@@ -855,10 +863,26 @@ textarea {
   .section-text{
     margin-bottom: 15px;
   }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+  }
   .burger-btn,.logo.mobile{
     display: inline-flex;
   }
-  
+  .logo.mobile{
+    padding: 0;
+  }
+  .nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
   .burger-menu{
     flex-direction: column;
     position: fixed;
@@ -870,6 +894,11 @@ textarea {
     z-index: 100;
     justify-content: flex-start;
     align-items: center;
+    transition: 0.3s;
+    transform: translateX(-100%);
+  }
+  .burger-menu.open{
+    transform: translateX(0);
   }
   .burger-menu .logo{
     order: -1;
@@ -878,7 +907,12 @@ textarea {
     flex-direction: column;
     border: 0;
     align-items: center;
-    
+  
+  }
+  .nav-wrap .burger-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .burger-menu a{
     font-size: 18px;

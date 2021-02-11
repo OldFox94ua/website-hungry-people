@@ -30,7 +30,7 @@
               alt="Logo of Restoraunt Hungry People"
             />
           </a>
-          <div class="burger-menu">
+          <div class="burger-menu" id="burgerMenu">
             <ul class="menu">
               <li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -50,13 +50,32 @@
               <li><a href="#events">Events</a></li>
               <li><a href="#booking">Contact</a></li>
             </ul>
+            <button href="#" class="btn btn-primary hero-btn burger-btn close" id="burgerClose">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
           </div>
-          <button href="#" class="btn btn-primary hero-btn burger-btn close">
+          <button href="#" class="btn btn-primary hero-btn burger-btn" id="burgerOpen">
             <i class="fas fa-bars" aria-hidden="true"></i>
           </button>
         </nav>
       </div>
     </header>
+    <script>
+      burgerOpen.onclick = () =>{
+        burgerMenu.classList.add('open')
+        
+      }
+      burgerMenu.onclick = event =>{
+        if (event.target.tagName == 'A'){
+          setTimeout(() => {
+            burgerMenu.classList.remove('open')},400
+          )
+        }
+      }
+      burgerClose.onclick = () =>{
+        burgerMenu.classList.remove('open')
+      }
+    </script>
     <!--======================HEADER END============================-->
 
     <!--======================HERO START============================-->
