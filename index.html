@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="css/style.css" as="style" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="fonts/Banny/Banny-BoldRound.woff" as="font" type="font/woff" crossorigin="anonymous">
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
+    <script async
       src="https://kit.fontawesome.com/7f9b41ae61.js"
       crossorigin="anonymous"
     ></script>
+    <meta name="Description" content="Author: Silaev V.">
     <title>Restoraunt Hungry People</title>
   </head>
   <body>
@@ -26,6 +24,8 @@
           <a href="index.html" class="logo mobile">
             <img
               loading="lazy"
+              width="1"
+              height="1"
               src="img/logo.png"
               alt="Logo of Restoraunt Hungry People"
             />
@@ -40,6 +40,8 @@
             <a href="index.html" class="logo">
               <img
                 loading="lazy"
+                width="1"
+                height="1"
                 src="img/logo.png"
                 alt="Logo of Restoraunt Hungry People"
               />
@@ -95,18 +97,18 @@
         </div>
 
         <div class="social-links">
-          <a href="https://www.facebook.com/" class="icon-style"
+          <a href="https://www.facebook.com/" class="icon-style" aria-label="link to facebook"
             ><i class="fab fa-facebook-f"></i
           ></a>
-          <a href="https://twitter.com/" class="icon-style"
+          <a href="https://twitter.com/" class="icon-style" aria-label="link to twitter"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a href="https://www.instagram.com/" class="icon-style"
+          <a href="https://www.instagram.com/" class="icon-style" aria-label="link to instagram"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>
       </div>
-      <a href="#about" class="link-to-bottom"
+      <a href="#about" class="link-to-bottom" aria-label="link to content"
         ><i class="fas fa-chevron-down"></i
       ></a>
     </div>
@@ -187,12 +189,14 @@
               name="name"
               required
               placeholder="Name"
+              aria-label="Name"
             />
             <input
               class="form-element"
               type="email"
               name="email"
               placeholder="Email"
+              aria-label="Email"
             />
             <input
               class="form-element"
@@ -200,6 +204,7 @@
               name="tel"
               required
               placeholder="Phone"
+              aria-label="Phone"
             />
             <select class="form-element" name="count">
               <option disabled selected>People</option>
@@ -213,6 +218,7 @@
               name="date"
               required
               placeholder="Date"
+              aria-label="Date"
             />
             <select class="form-element" name="time">
               <option disabled selected>Time</option>
@@ -366,13 +372,13 @@
           at velit maximus, molestie est a, tempor magna.
         </p>
         <ul class="deliciousMenu-group">
-          <li class="group-items"><a href="javascript:void(0)">Soupe</a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Pizza </a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Pasta </a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Desert </a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Wine </a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Beer </a></li>
-          <li class="group-items"><a href="javascript:void(0)"> Drinks </a></li>
+          <li class="group-items">Soupe</li>
+          <li class="group-items"> Pizza </li>
+          <li class="group-items">Pasta </li>
+          <li class="group-items">Desert </li>
+          <li class="group-items"> Wine </li>
+          <li class="group-items">Beer </li>
+          <li class="group-items"> Drinks</li>
         </ul>
 
         <!--DD DT DL-->
@@ -508,16 +514,16 @@
           <div class="swiper-container test-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/slide-img1.webp" alt="" />
+                <img src="img/slide-img1.webp" alt="hall" width="1" height="1" />
               </div>
               <div class="swiper-slide">
-                <img src="img/slide-img2.webp" alt="" />
+                <img src="img/slide-img2.webp" alt="living room" width="1" height="1" />
               </div>
               <div class="swiper-slide">
-                <img src="img/slide-img3.webp" alt="" />
+                <img src="img/slide-img3.webp" alt="kitchen" width="1" height="1" />
               </div>
               <div class="swiper-slide">
-                <img src="img/slide-img4.webp" alt="" />
+                <img src="img/slide-img4.webp" alt="second hall"width="1" height="1" />
               </div>
             </div>
           </div>
@@ -541,12 +547,14 @@
             name="name"
             required
             placeholder="Name"
+            aria-label="Name"
           />
           <input
             class="form-element"
             type="email"
             name="email"
             placeholder="Email"
+            aria-label="Email"
           />
           <input
             class="form-element"
@@ -554,6 +562,7 @@
             name="tel"
             required
             placeholder="Phone"
+            aria-label="Phone"
           />
           <textarea
             class="form-element message"
@@ -561,6 +570,7 @@
             cols="30"
             rows="5"
             placeholder="Message"
+            aria-label="Message"
           ></textarea>
           <div class="info-block">
             <a href="#map">
@@ -583,6 +593,7 @@
     <!--=========================MAP =========================-->
     <div class="map" id="map">
       <iframe
+      title="5th London Boulevard, U.K."
         loading="lazy"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.2966683907794!2d-74.01120700139376!3d40.720210183442056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f5852e694d%3A0x5bed69f7f928f84b!2sLocanda%20Verde!5e0!3m2!1sru!2sua!4v1608665285627!5m2!1sru!2sua"
         width="600"
